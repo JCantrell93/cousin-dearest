@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Protected Page</title>
+  <script>
+    const password = "mypassword"; // Change this to your own password
+    const userInput = prompt("Enter the password to view this page:");
+    if (userInput !== password) {
+      document.write("Access Denied.");
+      throw new Error("Unauthorized");
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome!</h1>
+  <img src="wedding-savethedate.jpg" alt="Protected Image" style="max-width:100%;">
+</body>
+</html>
